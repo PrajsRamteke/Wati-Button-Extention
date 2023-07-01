@@ -3,13 +3,23 @@
   "name": "WATI-Button",
   "version": "1.0",
   "permissions": ["scripting", "activeTab"],
+  "icons": {
+    "128": "128.png",
+     "48": "48.png",
+     "16": "16.png"
+  },
   "host_permissions": [
     "https://live-2846.wati.io/*",
     "https://live-100327.wati.io/*",
     "https://live-111031.wati.io/*"
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "128.png",
+       "48": "48.png",
+       "16": "16.png"
+    }
   },
   "background": {
     "service_worker": "background.js"
