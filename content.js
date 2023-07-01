@@ -59,8 +59,8 @@ function checkDivAndRunCode() {
       2
     );
     createButton(
-      "Official-No",
-      "Please message on our official Number\n\n_For any queries or clarifications please feel free to ask_\n_Mobile:_ 86000 39721\nWhatsApp: https://wa.me/918600039721",
+      "Call",
+      "Thank you for connecting with Habuild. 🙋🏻‍♂️\nYou can reach us, at our official calling number:📞 079 - 69213330",
       3
     );
     createButton(
@@ -87,6 +87,11 @@ function checkDivAndRunCode() {
       "1ON1",
       "Our main goal is to help you develop a sustainable yoga practice by forming good habits.🤝🏻 Though our sessions don't offer individual interaction, we create a supportive environment for consistent practice.\n\nOur sessions cater to participants of all levels, focusing on habit formation✅ and integrating yoga into your daily routine. Consistency is crucial for long-term benefits.\n\nFor specific questions, reach out through our official communication channels or call +91-8600039721. Our team provides general support and guidance.\n\nParticipate actively, leverage collective support, and enjoy transformative benefits over time.💁🏻‍♀️\n\nPayment link: https://i.habuild.in/membershipplan",
       8
+    );
+    createButton(
+      "SS",
+      "Could you please share the screenshot of the payment made? Which has the date, time, and transaction id in it 🙏🙏",
+      9
     );
 
     // Disconnect the observer after running the code
