@@ -3,7 +3,11 @@
   "name": "WATI-Button",
   "version": "1.0",
   "permissions": ["scripting", "activeTab"],
-  "host_permissions": ["https://live-100327.wati.io/*"],
+  "host_permissions": [
+    "https://live-2846.wati.io/*",
+    "https://live-100327.wati.io/*",
+    "https://live-111031.wati.io/*"
+  ],
   "action": {
     "default_popup": "popup.html"
   },
@@ -12,7 +16,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://live-100327.wati.io/teamInbox/*"],
+      "matches": [
+        "https://live-2846.wati.io/teamInbox/*",
+        "https://live-100327.wati.io/teamInbox/*",
+        "https://live-111031.wati.io/teamInbox/*"
+      ],
       "js": ["content.js"]
     }
   ]
