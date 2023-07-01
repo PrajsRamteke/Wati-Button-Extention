@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "WATI-Button",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://live-100327.wati.io/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://live-100327.wati.io/teamInbox/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
