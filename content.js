@@ -13,14 +13,17 @@ function createButton(text, data, index) {
   button.style.position = "relative";
   button.style.color = "red";
   button.style.cursor = "pointer";
-  button.style.fontSize = "14px";
-  button.style.fontWeight = "bold";
+  button.style.fontSize = "13px";
+  button.style.fontWeight = "bolder";
   button.style.display = "flex";
-  button.style.margin = "0 10px";
+  button.style.justifyContent = "center"; // Add equal spacing
+  button.style.alignItems = "center"; // Add equal spacing
+  button.style.width = "90px"; // Adjust button width as needed
+  button.style.height = "20px"; // Adjust button height as needed
   button.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
-  button.style.padding = "0px 4px";
   button.style.backgroundColor = "#F5F5F5";
   button.style.borderRadius = "5px";
+  button.style.margin = "0 5px";
 
   button.addEventListener("click", function () {
     var inputField = document.querySelector("#box-chat");
@@ -51,8 +54,8 @@ function checkDivAndRunCode() {
 
   if (targetNode) {
     // Div is present, run the code
-    createButton("Wlc", "You're welcome 😀 👍", 0);
-    createButton("Thnx", "Thank you so much😊😊🙏", 1);
+    createButton("Welcome", "You're welcome 😀 👍", 0);
+    createButton("Thanks", "Thank you so much😊😊🙏", 1);
     createButton(
       "Batchs",
       "We have three morning batches and three evening batches: (IST)\n\n⏰ Batch 1: 6:30 AM - 7:15 AM\n⏰ Batch 2: 7:30 AM - 8:15 AM\n⏰ Batch 3: 8:30 AM - 9:15 AM\n\n⏰ Batch 4: 5:00 PM- 5:45 PM\n⏰ Batch 5: 6:00 PM - 6:45 PM\n⏰ Batch 6: 7:00 PM - 7:45 PM\n\nThe joining link for all batches is the same, and you can join any of the above 6 batches. All timings are in Indian Standard Time",
