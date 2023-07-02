@@ -4,22 +4,17 @@
   "version": "1.0",
   "permissions": ["scripting", "activeTab"],
   "icons": {
-    "128": "128.png",
-     "48": "48.png",
-     "16": "16.png"
-  },
+    "16": "logo/logo-16.png",
+    "48": "logo/logo-48.png",
+    "128": "logo/logo-128.png"
+},
   "host_permissions": [
     "https://live-2846.wati.io/*",
     "https://live-100327.wati.io/*",
     "https://live-111031.wati.io/*"
   ],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "128": "128.png",
-       "48": "48.png",
-       "16": "16.png"
-    }
+    "default_popup": "popup.html"
   },
   "background": {
     "service_worker": "background.js"
