@@ -1,9 +1,7 @@
-/** @format */
-
 setInterval(function() {
   var chatInput = document.querySelector(".chat-input-typing-status-bar");
-  if (chatInput.classList.contains("chat-input-typing-status-bar")) {
-    chatInput.style.top = "-80%";
+  if(chatInput !== null){
+    chatInput.style.top = "-80%";  
   }
 }, 3000);
 
