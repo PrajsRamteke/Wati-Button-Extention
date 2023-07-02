@@ -1,5 +1,12 @@
 /** @format */
 
+setInterval(function() {
+  var chatInput = document.querySelector(".chat-input-typing-status-bar");
+  if (chatInput.classList.contains("chat-input-typing-status-bar")) {
+    chatInput.style.top = "-80%";
+  }
+}, 3000);
+
 // Function to create the buttons
 function createButton(text, data, index) {
   var container = document.createElement("div");
@@ -28,12 +35,10 @@ function createButton(text, data, index) {
   var chatArea = document.querySelector(".sc-lhVmIH.dWNeCd.chat-area");
   chatArea.style.marginBottom = "20px";
 
-  const chatInput = document.querySelector(".chat-input-typing-status-bar");
-  if (chatInput) {
-    chatInput.style.top = "-80%";
-  }
-  
-  
+  // var chatInput = document.querySelector(".chat-input-typing-status-bar");
+  // chatInput.style.top = "-80%";
+
+
   button.addEventListener("click", function () {
     var inputField = document.querySelector("#box-chat");
     if (inputField) {
