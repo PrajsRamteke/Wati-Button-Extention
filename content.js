@@ -4,7 +4,7 @@
 function createButton(text, data, index) {
   var container = document.createElement("div");
   container.style.position = "absolute";
-  container.style.top = "-10%";
+  container.style.top = "-16%";
   container.style.left = index * 100 + "px";
   container.style.zIndex = "9999";
 
@@ -19,11 +19,14 @@ function createButton(text, data, index) {
   button.style.justifyContent = "center"; // Add equal spacing
   button.style.alignItems = "center"; // Add equal spacing
   button.style.width = "90px"; // Adjust button width as needed
-  button.style.height = "20px"; // Adjust button height as needed
+  button.style.height = "24px"; // Adjust button height as needed
   button.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
   button.style.backgroundColor = "#F5F5F5";
   button.style.borderRadius = "5px";
   button.style.margin = "0 5px";
+
+  var chatArea = document.querySelector(".sc-lhVmIH.dWNeCd.chat-area");
+  chatArea.style.marginBottom = "20px";
 
   button.addEventListener("click", function () {
     var inputField = document.querySelector("#box-chat");
@@ -34,6 +37,7 @@ function createButton(text, data, index) {
   });
 
   container.appendChild(button);
+
   var targetNode = document.querySelector(".sc-kTUwUJ.giHtTy");
   if (targetNode) {
     targetNode.appendChild(container);
