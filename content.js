@@ -11,15 +11,15 @@ function createButton(text, data, index) {
   var button = document.createElement("div");
   button.innerHTML = text;
   button.style.position = "relative";
-  button.style.color = "red";
+  button.style.color = "Black";
   button.style.cursor = "pointer";
   button.style.fontSize = "13px";
   button.style.fontWeight = "bolder";
   button.style.display = "flex";
-  button.style.justifyContent = "center"; // Add equal spacing
-  button.style.alignItems = "center"; // Add equal spacing
-  button.style.width = "90px"; // Adjust button width as needed
-  button.style.height = "24px"; // Adjust button height as needed
+  button.style.justifyContent = "center"; 
+  button.style.alignItems = "center"; 
+  button.style.width = "90px"; 
+  button.style.height = "24px"; 
   button.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
   button.style.backgroundColor = "#F5F5F5";
   button.style.borderRadius = "5px";
@@ -28,6 +28,12 @@ function createButton(text, data, index) {
   var chatArea = document.querySelector(".sc-lhVmIH.dWNeCd.chat-area");
   chatArea.style.marginBottom = "20px";
 
+  const chatInput = document.querySelector(".chat-input-typing-status-bar");
+  if (chatInput) {
+    chatInput.style.top = "-80%";
+  }
+  
+  
   button.addEventListener("click", function () {
     var inputField = document.querySelector("#box-chat");
     if (inputField) {
