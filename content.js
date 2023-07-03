@@ -1,7 +1,9 @@
-setInterval(function() {
+/** @format */
+
+setInterval(function () {
   var chatInput = document.querySelector(".chat-input-typing-status-bar");
-  if(chatInput !== null){
-    chatInput.style.top = "-80%";  
+  if (chatInput !== null) {
+    chatInput.style.top = "-80%";
   }
 }, 3000);
 
@@ -21,10 +23,10 @@ function createButton(text, data, index) {
   button.style.fontSize = "13px";
   button.style.fontWeight = "bolder";
   button.style.display = "flex";
-  button.style.justifyContent = "center"; 
-  button.style.alignItems = "center"; 
-  button.style.width = "90px"; 
-  button.style.height = "24px"; 
+  button.style.justifyContent = "center";
+  button.style.alignItems = "center";
+  button.style.width = "90px";
+  button.style.height = "24px";
   button.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
   button.style.backgroundColor = "#F5F5F5";
   button.style.borderRadius = "5px";
@@ -35,7 +37,6 @@ function createButton(text, data, index) {
 
   // var chatInput = document.querySelector(".chat-input-typing-status-bar");
   // chatInput.style.top = "-80%";
-
 
   button.addEventListener("click", function () {
     var inputField = document.querySelector("#box-chat");
@@ -82,7 +83,7 @@ function checkDivAndRunCode() {
     createButton(
       "Pay-issues",
       "Please let us know the error in detail.\n\nFill out this form:\n\nhttps://i.habuild.in/payment-issues",
-      4
+      12
     );
     createButton(
       "Start-Later",
@@ -97,7 +98,7 @@ function checkDivAndRunCode() {
     createButton(
       "Int-Price",
       "*International Pricing:*\n\nThis is to inform you that the difference in our pricing is owing to the WhatsApp number that is being used and not the location.\n\nJust like how we incur additional charges when we send an SMS to an international member. Similarly, the business version of Whatsapp charges us additional too. (almost 10X price in comparison to sending it on the Indian number)\n\nIt could be the case that you're residing outside of India but have a functional Indian WhatsApp number. In that case, the INR pricing will apply to you.\n\nIn case, if you're residing in India but using an International number, then International pricing will apply to you.",
-      7
+      10
     );
     createButton(
       "1ON1",
@@ -108,6 +109,21 @@ function checkDivAndRunCode() {
       "SS",
       "Could you please share the screenshot of the payment made? Which has the date, time, and transaction id in it 🙏🙏",
       9
+    );
+    createButton(
+      "UPIForm",
+      "*Thanks a lot for subscribing:* \n*Please fill this form to get the links:*\n\nhttps://habuild.in/memberpayment\n_Please reply back with a YES when done_ ",
+      4
+    );
+    createButton(
+      "Off-Valid",
+      "The offer on the pricing is valid till 1st week of July only. 💁🏻‍♀️\n\nTo avail of the offer with benefits, sign up now: 👇🏻\nhttps://habuild.in/membershipplan",
+      11
+    );
+    createButton(
+      "Bank",
+      "HDFC A/C: 59203000100100\n\nIFSC Code: HDFC0004704\n\nName : Habuild Healthtech Pvt Ltd\n\nShare screenshot of transfer on 8600039721",
+      7
     );
 
     // Disconnect the observer after running the code
