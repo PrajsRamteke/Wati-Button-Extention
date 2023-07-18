@@ -7,6 +7,13 @@ setInterval(function () {
   }
 }, 3000);
 
+setInterval(function () {
+  var shortcuts = document.querySelectorAll(".shortcut-content-text");
+  for (var i = 0; i < shortcuts.length; i++) {
+    shortcuts[i].style.color = "#1b00a9";
+  }
+}, 100);
+
 // Function to create the buttons
 function createButton(text, data, index) {
   var container = document.createElement("div");
@@ -34,6 +41,9 @@ function createButton(text, data, index) {
 
   var chatArea = document.querySelector(".sc-btzYZH.jLFvcB.chat-area");
   chatArea.style.marginBottom = "20px";
+
+
+
 
   // var chatInput = document.querySelector(".chat-input-typing-status-bar");
   // chatInput.style.top = "-80%";
