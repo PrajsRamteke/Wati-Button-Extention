@@ -32,7 +32,7 @@ function createButton(text, data, index) {
   button.style.borderRadius = "5px";
   button.style.margin = "0 5px";
 
-  var chatArea = document.querySelector(".sc-lhVmIH.dWNeCd.chat-area");
+  var chatArea = document.querySelector(".sc-btzYZH.jLFvcB.chat-area");
   chatArea.style.marginBottom = "20px";
 
   // var chatInput = document.querySelector(".chat-input-typing-status-bar");
@@ -49,7 +49,7 @@ function createButton(text, data, index) {
 
   container.appendChild(button);
 
-  var targetNode = document.querySelector(".sc-kTUwUJ.giHtTy");
+  var targetNode = document.querySelector(".sc-jtRfpW.guXeue");
   if (targetNode) {
     targetNode.appendChild(container);
   }
@@ -63,28 +63,30 @@ function updateCode(data) {
   }
 }
 
+// .sc-kTUwUJ.giHtTy
+
 // Function to check if the desired div is present and run the code
 function checkDivAndRunCode() {
-  const targetNode = document.querySelector(".sc-kTUwUJ.giHtTy");
+  const targetNode = document.querySelector(".sc-jtRfpW.guXeue");
 
   if (targetNode) {
     // Div is present, run the code
     createButton("Welcome", "You're welcome 😀 👍", 0);
     createButton("Thanks", "Thank you so much😊😊🙏", 1);
     createButton(
-      "Batchs",
-      "We have three morning batches and three evening batches: (IST)\n\n⏰ Batch 1: 6:30 AM - 7:15 AM\n⏰ Batch 2: 7:30 AM - 8:15 AM\n⏰ Batch 3: 8:30 AM - 9:15 AM\n\n⏰ Batch 4: 5:00 PM- 5:45 PM\n⏰ Batch 5: 6:00 PM - 6:45 PM\n⏰ Batch 6: 7:00 PM - 7:45 PM\n\nThe joining link for all batches is the same, and you can join any of the above 6 batches. All timings are in Indian Standard Time",
+      "Hello",
+      "Hello, my name is Prajwal from Habuild. ",
       2
-    );
+      );
+      createButton(
+        "Batchs",
+        "We have three morning batches and three evening batches: (IST)\n\n⏰ Batch 1: 6:30 AM - 7:15 AM\n⏰ Batch 2: 7:30 AM - 8:15 AM\n⏰ Batch 3: 8:30 AM - 9:15 AM\n\n⏰ Batch 4: 5:00 PM- 5:45 PM\n⏰ Batch 5: 6:00 PM - 6:45 PM\n⏰ Batch 6: 7:00 PM - 7:45 PM\n\nThe joining link for all batches is the same, and you can join any of the above 6 batches. All timings are in Indian Standard Time",
+        3
+      );
     createButton(
-      "Call",
-      "Thank you for connecting with Habuild. 🙋🏻‍♂️\nYou can reach us, at our official calling number:📞 079 - 69213330",
-      3
-    );
-    createButton(
-      "Pay-issues",
-      "Please let us know the error in detail.\n\nFill out this form:\n\nhttps://i.habuild.in/payment-issues",
-      12
+      "Dance-WC",
+      "Hello Habuilders😃\nGet fit with Trishala Bothra \n\n*Timings*\nMorning:\n⏰8:30 - 9:15 AM IST (Mor)\n\nEvening:\n⏰7:00 - 7:45 PM IST (Eve)\n⏰8:00 - 8:45 PM IST (Eve)\n\n*Session Format*\n🤸‍♀Stretching session : Every Monday, Wednesday, and Friday\n\n💃🏻Dance sessions : Every Tuesday, Thursday, and Sunday\n\nPlease join this whatsapp Community to get the joining link and updates:\n\n*Link:*\nhttps://i.habuild.in/dance-stretch-community",
+      4
     );
     createButton(
       "Start-Later",
@@ -97,16 +99,6 @@ function checkDivAndRunCode() {
       6
     );
     createButton(
-      "Int-Price",
-      "*International Pricing:*\n\nThis is to inform you that the difference in our pricing is owing to the WhatsApp number that is being used and not the location.\n\nJust like how we incur additional charges when we send an SMS to an international member. Similarly, the business version of Whatsapp charges us additional too. (almost 10X price in comparison to sending it on the Indian number)\n\nIt could be the case that you're residing outside of India but have a functional Indian WhatsApp number. In that case, the INR pricing will apply to you.\n\nIn case, if you're residing in India but using an International number, then International pricing will apply to you.",
-      10
-    );
-    createButton(
-      "1ON1",
-      "Our main goal is to help you develop a sustainable yoga practice by forming good habits.🤝🏻 Though our sessions don't offer individual interaction, we create a supportive environment for consistent practice.\n\nOur sessions cater to participants of all levels, focusing on habit formation✅ and integrating yoga into your daily routine. Consistency is crucial for long-term benefits.\n\nFor specific questions, reach out through our official communication channels or call +91-8600039721. Our team provides general support and guidance.\n\nParticipate actively, leverage collective support, and enjoy transformative benefits over time.💁🏻‍♀️\n\nPayment link: https://i.habuild.in/membershipplan",
-      9
-    );
-    createButton(
       "SS",
       "Could you please share the screenshot of the payment made? Which has the date, time, and transaction id in it 🙏🙏",
       8
@@ -114,17 +106,23 @@ function checkDivAndRunCode() {
     createButton(
       "UPIForm",
       "*Thanks a lot for subscribing:* \n*Please fill this form to get the links:*\n\nhttps://habuild.in/memberpayment\n_Please reply back with a YES when done_ ",
-      4
+      10
     );
-    createButton(
-      "Off-Valid",
-      "The offer on the pricing is valid till 1st week of July only. 💁🏻‍♀️\n\nTo avail of the offer with benefits, sign up now: 👇🏻\nhttps://habuild.in/membershipplan",
-      11
-    );
+
     createButton(
       "Bank",
       "HDFC A/C: 59203000100100\n\nIFSC Code: HDFC0004704\n\nName : Habuild Healthtech Pvt Ltd\n\nShare screenshot of transfer on 8600039721",
       7
+    );
+    createButton(
+      "DanceLink",
+      "LIVE Dance and stretch Zumba session link \n\nhttps://i.habuild.in/dance-stretch-live",
+      5
+    );
+    createButton(
+      "CloseChat",
+      "Thank you for contacting us. If you have any further questions, feel free to reach out. Have a wonderful day!",
+      9
     );
 
     // Disconnect the observer after running the code
