@@ -85,7 +85,7 @@ function checkDivAndRunCode() {
     createButton("Thanks", "Thank you so much😊😊🙏", 1);
     createButton(
       "Hello",
-      "Hello, my name is Prajwal from Habuild. ",
+      "Hello, my name is [Name] from Habuild. ",
       2
       );
       createButton(
