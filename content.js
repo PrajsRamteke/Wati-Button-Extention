@@ -1,14 +1,14 @@
 /** @format */
 
 setInterval(function () {
-  var chatInput = document.querySelector(".chat-input-typing-status-bar");
+  var chatInput = document.querySelector(".sc-bsbRJL.iPnuFw"); //new
   if (chatInput !== null) {
     chatInput.style.top = "-80%";
   }
 }, 3000);
 
 setInterval(function () {
-  var shortcuts = document.querySelectorAll(".shortcut-content-text");
+  var shortcuts = document.querySelectorAll(".shortcut-content-text"); //working
   for (var i = 0; i < shortcuts.length; i++) {
     shortcuts[i].style.color = "#1b00a9";
   }
@@ -39,14 +39,9 @@ function createButton(text, data, index) {
   button.style.borderRadius = "5px";
   button.style.margin = "0 5px";
 
-  var chatArea = document.querySelector(".sc-btzYZH.jLFvcB.chat-area");
+  var chatArea = document.querySelector(".sc-hrWEMg.kTPtTE.chat-area"); //new
   chatArea.style.marginBottom = "20px";
 
-
-
-
-  // var chatInput = document.querySelector(".chat-input-typing-status-bar");
-  // chatInput.style.top = "-80%";
 
   button.addEventListener("click", function () {
     var inputField = document.querySelector("#box-chat");
@@ -59,7 +54,7 @@ function createButton(text, data, index) {
 
   container.appendChild(button);
 
-  var targetNode = document.querySelector(".sc-jtRfpW.guXeue");
+  var targetNode = document.querySelector(".sc-iQNlJl.jlFDec"); 
   if (targetNode) {
     targetNode.appendChild(container);
   }
@@ -73,11 +68,10 @@ function updateCode(data) {
   }
 }
 
-// .sc-kTUwUJ.giHtTy
 
 // Function to check if the desired div is present and run the code
 function checkDivAndRunCode() {
-  const targetNode = document.querySelector(".sc-jtRfpW.guXeue");
+  const targetNode = document.querySelector(".sc-iQNlJl.jlFDec"); 
 
   if (targetNode) {
     // Div is present, run the code
@@ -85,7 +79,7 @@ function checkDivAndRunCode() {
     createButton("Thanks", "Thank you so much😊😊🙏", 1);
     createButton(
       "Hello",
-      "Hello, my name is [Name] from Habuild. ",
+      "Hello, my name is Prajwal from Habuild. ",
       2
       );
       createButton(
@@ -112,12 +106,7 @@ function checkDivAndRunCode() {
       "SS",
       "Could you please share the screenshot of the payment made? Which has the date, time, and transaction id in it 🙏🙏",
       8
-    );
-    createButton(
-      "UPIForm",
-      "*Thanks a lot for subscribing:* \n*Please fill this form to get the links:*\n\nhttps://habuild.in/memberpayment\n_Please reply back with a YES when done_ ",
-      10
-    );
+    );	
 
     createButton(
       "Bank",
