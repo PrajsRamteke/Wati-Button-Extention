@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "WATI-Button",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "permissions": ["scripting", "activeTab"],
   "icons": {
     "16": "logo/logo-16.png",
