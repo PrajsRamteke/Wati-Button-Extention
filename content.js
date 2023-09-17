@@ -1,7 +1,7 @@
 /** @format */
 
 setInterval(function () {
-  var chatInput = document.querySelector(".sc-bsbRJL.iPnuFw"); //new
+  var chatInput = document.querySelector(".sc-dUjcNx.dYJvFm");
   if (chatInput !== null) {
     chatInput.style.top = "-80%";
   }
@@ -39,7 +39,7 @@ function createButton(text, data, index) {
   button.style.borderRadius = "5px";
   button.style.margin = "0 5px";
 
-  var chatArea = document.querySelector(".sc-hrWEMg.kTPtTE.chat-area"); //new
+  var chatArea = document.querySelector(".sc-lkqHmb.cuubsV.chat-area"); //new sc-dUjcNx dYJvFm , sc-fOKMvo imsZwt
   chatArea.style.marginBottom = "20px";
 
 
@@ -54,7 +54,8 @@ function createButton(text, data, index) {
 
   container.appendChild(button);
 
-  var targetNode = document.querySelector(".sc-iQNlJl.jlFDec"); 
+  // var targetNode = document.querySelector(".sc-iQNlJl.jlFDec"); // sc-fOKMvo imsZwt
+  var targetNode = document.querySelector(".sc-fOKMvo.imsZwt"); 
   if (targetNode) {
     targetNode.appendChild(container);
   }
@@ -71,7 +72,7 @@ function updateCode(data) {
 
 // Function to check if the desired div is present and run the code
 function checkDivAndRunCode() {
-  const targetNode = document.querySelector(".sc-iQNlJl.jlFDec"); 
+  const targetNode = document.querySelector(".sc-fOKMvo.imsZwt"); // sc-fOKMvo imsZwt
 
   if (targetNode) {
     // Div is present, run the code
@@ -98,8 +99,8 @@ function checkDivAndRunCode() {
       5
     );
     createButton(
-      "TQ",
-      "Thank you for your subscription  :)\n\nWe are excited to have you on board and start the journey for Yoga every day.\n\nClick here to check if you have received a confirmation of Payment:\n\nLink:➡️ wa.me/918600039721",
+      "Rest",
+      "Please take rest and get well soon😊🙏🏻",
       6
     );
     createButton(
